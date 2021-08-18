@@ -22,7 +22,7 @@ function getSubtotal(){
     const caseCost = parseFloat(document.getElementById('caseCost').innerText);
     const phoneCost = parseFloat(document.getElementById('phoneCost').innerText);
     const subTotal = caseCost + phoneCost;
-    const taxAmount = (subTotal/100) * 15;
+    const taxAmount = (subTotal/100) * 15; 
     document.getElementById('subTotal').innerText = subTotal;
     document.getElementById('tax').innerText = taxAmount.toFixed(1);
     document.getElementById('total').innerText = (subTotal - taxAmount).toFixed(1);
